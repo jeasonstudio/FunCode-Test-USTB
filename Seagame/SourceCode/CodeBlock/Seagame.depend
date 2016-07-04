@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1420212242 source:c:\program files (x86)\funcode\games\seagame\sourcecode\icon.rc
+
+1433848136 source:c:\program files (x86)\funcode\games\seagame\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonAPI.h"
+	"LessonX.h"
+
+1422201536 c:\program files (x86)\funcode\games\seagame\sourcecode\header\commonapi.h
+	<windows.h>
+
+1433848234 c:\program files (x86)\funcode\games\seagame\sourcecode\header\lessonx.h
+	<Windows.h>
+
+1467649603 source:c:\program files (x86)\funcode\games\seagame\sourcecode\src\main.cpp
+	"CommonAPI.h"
+	"LessonX.h"
+
