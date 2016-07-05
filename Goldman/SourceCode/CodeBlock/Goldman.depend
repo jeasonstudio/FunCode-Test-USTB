@@ -1,10 +1,11 @@
 # depslib dependency file v1.0
 1420212242 source:c:\program files\funcode\games\goldman\sourcecode\icon.rc
 
-1467683538 source:c:\program files\funcode\games\goldman\sourcecode\src\lessonx.cpp
+1467687497 source:c:\program files\funcode\games\goldman\sourcecode\src\lessonx.cpp
 	<Stdio.h>
 	"CommonAPI.h"
 	"LessonX.h"
+	"unistd.h"
 
 1422201536 c:\program files\funcode\games\goldman\sourcecode\header\commonapi.h
 	<windows.h>
@@ -12,7 +13,7 @@
 1433848234 c:\program files\funcode\games\goldman\sourcecode\header\lessonx.h
 	<Windows.h>
 
-1467682932 source:c:\program files\funcode\games\goldman\sourcecode\src\main.cpp
+1467684419 source:c:\program files\funcode\games\goldman\sourcecode\src\main.cpp
 	"CommonAPI.h"
 	"LessonX.h"
 

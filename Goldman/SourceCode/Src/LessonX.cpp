@@ -16,8 +16,12 @@ void GameInit();
 void GameRun( float fDeltaTime );
 void GameEnd();
 
+const char	*szGoldName	=	NULL;
+
 char g_szCurGetGold[64];	// 当前抓取到的金子名字
 float g_fEmptyHookSpeed; // 空的钩子的移动速度
+
+int finalScore = 0;
 
 // 抓取金子状态：0 -- 等待按键开始抓金子；1 -- 钩子伸出去；2 -- 钩子往回// 伸，未抓到东西；3 -- 钩子往回伸，带着金子
 int g_iGetGoldState	;
@@ -120,28 +124,33 @@ void GameInit()
 
 	int	iLoop	=	0;
     char	*szName	=	NULL;
-    int	iSize	=	4, iPosX = 0, iPosY = 0;
+    int	iSize =	4, iPosX = 0, iPosY = 0;
     for( iLoop = 0; iLoop < g_iGoldCount; iLoop++ )
     {
         if( iLoop < 10 )
         {
             iSize	=	4;
+
         }
         else if( iLoop >= 10 && iLoop < 16 )
         {
             iSize	=	6;
+
         }
         else
         {
             iSize	=	8;
+
         }
         szName	=	dMakeSpriteName( "GoldBlock", iLoop );
+
         dCloneSprite( "GoldTemplate", szName );
         dSetSpriteWidth( szName, (float)iSize );
         dSetSpriteHeight( szName, (float)iSize );
         // 随机一个位置
         iPosX	=	dRandomRange( g_iGoldBornMinX, g_iGoldBornMaxX );
         iPosY	=	dRandomRange( g_iGoldBornMinY, g_iGoldBornMaxY );
+        dSetSpriteMass(szName,5*iSize);
         dSetSpritePosition( szName, (float)iPosX, (float)iPosY );
     }
 
@@ -191,12 +200,19 @@ void GameRun( float fDeltaTime )
 		float	fSpeedY	=	dGetSpriteLinearVelocityY( "GoldHook" );
 		// 当前速度不为0，还在运动中
 		// 浮点数是否为0，不能直接判断 == != 0
-		if( fSpeedX > 0.00001f || fSpeedX < -0.00001f || fSpeedY > 0.00001f || 			fSpeedY < -0.00001f )
-				return;
-		// 速度为0，钩子回到初始点，开始下一轮的抓取
-		// 当前抓取到金子，将抓取到的金子释放并删除之。然后将金子数量减一
+		if( fSpeedX > 0.00001f || fSpeedX < -0.00001f || fSpeedY > 0.00001f || fSpeedY < -0.00001f )
+        {
+
+            return;
+            // 速度为0，钩子回到初始点，开始下一轮的抓取
+            // 当前抓取到金子，将抓取到的金子释放并删除之。然后将金子数量减一
+        }
+
 		if( 3 == g_iGetGoldState )
 		{
+		    finalScore += dGetSpriteMass(szGoldName);
+            dSetTextValue("score",finalScore);
+            //在这里添加分数
 			g_iGoldCount--;
 			dSpriteDismount( g_szCurGetGold );
 			dDeleteSprite( g_szCurGetGold );
@@ -258,11 +274,10 @@ void OnKeyDown( const int iKey, const bool bAltPress, const bool bShiftPress, co
 		// 设置抓取状态为：钩子往外伸
 		g_iGetGoldState	=	1;
 		// 以当前朝向给钩子一个向前的速度
-		dSetSpriteLinearVelocityPolar("GoldHook",g_fEmptyHookSpeed, 					g_fHookRotation );
+		dSetSpriteLinearVelocityPolar("GoldHook",g_fEmptyHookSpeed, g_fHookRotation );
 		// 播放挖金者的动作(一个胳膊往下压的动作)
 		dAnimateSpritePlayAnimation( "GoldMan", "GolderManAnimation1", 0 );
 	}
-
 }
 //==========================================================================
 //
@@ -286,7 +301,7 @@ void OnSpriteColSprite( const char *szSrcName, const char *szTarName )
     if( stricmp( "GoldHook", szSrcName ) != 0 && stricmp( "GoldHook", szTarName ) != 0 )
         return;;
     // 找到哪个是金子的名字
-    const char	*szGoldName	=	NULL;
+    //const char	*szGoldName	=	NULL;
     if( strstr( szSrcName, "GoldBlock" ) )
         szGoldName = szSrcName;
     else if( strstr( szTarName, "GoldBlock" ) )

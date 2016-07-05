@@ -6,7 +6,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //
-// 主函数入口
+// ���������
 //
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -18,123 +18,123 @@ int PASCAL WinMain(HINSTANCE hInstance,
                    LPSTR     lpCmdLine,
                    int       nCmdShow)
 {
-	// 初始化游戏引擎
+	// ��ʼ����Ϸ����
 	if( !dInitGameEngine( hInstance, lpCmdLine ) )
 		return 0;
 
-	// To do : 在此使用API更改窗口标题
+	// To do : �ڴ�ʹ��API���Ĵ��ڱ���
 	dSetWindowTitle("GoldmanByJeason");
 
-	// 引擎主循环，处理屏幕图像刷新等工作
+	// ������ѭ����������Ļͼ��ˢ�µȹ���
 	while( dEngineMainLoop() )
 	{
-		// 获取两次调用之间的时间差，传递给游戏逻辑处理
+		// ��ȡ���ε���֮���ʱ�����ݸ���Ϸ�߼�����
 		float	fTimeDelta	=	dGetTimeDelta();
 
-		// 执行游戏主循环
+		// ִ����Ϸ��ѭ��
 		GameMainLoop( fTimeDelta );
 
-		// 画钩子的缆绳线。不管游戏是什么状态，这根缆绳线都要画出来
+		// �����ӵ������ߡ�������Ϸ��ʲô״̬����������߶�Ҫ������
         DrawHookLine();
 
 	};
 
-	// 关闭游戏引擎
+	// �ر���Ϸ����
 	dShutdownGameEngine();
 	return 0;
 }
 
 //==========================================================================
 //
-// 引擎捕捉鼠标移动消息后，将调用到本函数
-// 参数 fMouseX, fMouseY：为鼠标当前坐标
+// ���沶׽����ƶ���Ϣ�󣬽����õ�������
+// ���� fMouseX, fMouseY��Ϊ��굱ǰ����
 //
 void dOnMouseMove( const float fMouseX, const float fMouseY )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnMouseMove(fMouseX, fMouseY );
 }
 //==========================================================================
 //
-// 引擎捕捉鼠标点击消息后，将调用到本函数
-// 参数 iMouseType：鼠标按键值，见 enum MouseTypes 定义
-// 参数 fMouseX, fMouseY：为鼠标当前坐标
+// ���沶׽�������Ϣ�󣬽����õ�������
+// ���� iMouseType����갴��ֵ���� enum MouseTypes ����
+// ���� fMouseX, fMouseY��Ϊ��굱ǰ����
 //
 void dOnMouseClick( const int iMouseType, const float fMouseX, const float fMouseY )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnMouseClick(iMouseType, fMouseX, fMouseY);
 
 }
 //==========================================================================
 //
-// 引擎捕捉鼠标弹起消息后，将调用到本函数
-// 参数 iMouseType：鼠标按键值，见 enum MouseTypes 定义
-// 参数 fMouseX, fMouseY：为鼠标当前坐标
+// ���沶׽��굯����Ϣ�󣬽����õ�������
+// ���� iMouseType����갴��ֵ���� enum MouseTypes ����
+// ���� fMouseX, fMouseY��Ϊ��굱ǰ����
 //
 void dOnMouseUp( const int iMouseType, const float fMouseX, const float fMouseY )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnMouseUp(iMouseType, fMouseX, fMouseY);
 
 }
 //==========================================================================
 //
-// 引擎捕捉键盘按下消息后，将调用到本函数
-// 参数 iKey：被按下的键，值见 enum KeyCodes 宏定义
-// 参数 iAltPress, iShiftPress，iCtrlPress：键盘上的功能键Alt，Ctrl，Shift当前是否也处于按下状态(0未按下，1按下)
+// ���沶׽���̰�����Ϣ�󣬽����õ�������
+// ���� iKey�������µļ���ֵ�� enum KeyCodes �궨��
+// ���� iAltPress, iShiftPress��iCtrlPress�������ϵĹ��ܼ�Alt��Ctrl��Shift��ǰ�Ƿ�Ҳ���ڰ���״̬(0δ���£�1����)
 //
 void dOnKeyDown( const int iKey, const int iAltPress, const int iShiftPress, const int iCtrlPress )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnKeyDown(iKey, iAltPress, iShiftPress, iCtrlPress);
 }
 //==========================================================================
 //
-// 引擎捕捉键盘弹起消息后，将调用到本函数
-// 参数 iKey：弹起的键，值见 enum KeyCodes 宏定义
+// ���沶׽���̵�����Ϣ�󣬽����õ�������
+// ���� iKey������ļ���ֵ�� enum KeyCodes �궨��
 //
 void dOnKeyUp( const int iKey )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnKeyUp(iKey);
 }
 
 //===========================================================================
 //
-// 引擎捕捉到精灵与精灵碰撞之后，调用此函数
-// 精灵之间要产生碰撞，必须在编辑器或者代码里设置精灵发送及接受碰撞
-// 参数 szSrcName：发起碰撞的精灵名字
-// 参数 szTarName：被碰撞的精灵名字
+// ���沶׽�������뾫����ײ֮�󣬵��ô˺���
+// ����֮��Ҫ������ײ�������ڱ༭�����ߴ��������þ��鷢�ͼ�������ײ
+// ���� szSrcName��������ײ�ľ�������
+// ���� szTarName������ײ�ľ�������
 //
 void dOnSpriteColSprite( const char *szSrcName, const char *szTarName )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnSpriteColSprite(szSrcName, szTarName);
 }
 
 //===========================================================================
 //
-// 引擎捕捉到精灵与世界边界碰撞之后，调用此函数.
-// 精灵之间要产生碰撞，必须在编辑器或者代码里设置精灵的世界边界限制
-// 参数 szName：碰撞到边界的精灵名字
-// 参数 iColSide：碰撞到的边界 0 左边，1 右边，2 上边，3 下边
+// ���沶׽������������߽���ײ֮�󣬵��ô˺���.
+// ����֮��Ҫ������ײ�������ڱ༭�����ߴ��������þ��������߽�����
+// ���� szName����ײ���߽�ľ�������
+// ���� iColSide����ײ���ı߽� 0 ��ߣ�1 �ұߣ�2 �ϱߣ�3 �±�
 //
 void dOnSpriteColWorldLimit( const char *szName, const int iColSide )
 {
-	// 可以在此添加游戏需要的响应函数
+	// �����ڴ�������Ϸ��Ҫ����Ӧ����
 	OnSpriteColWorldLimit(szName, iColSide);
 }
 
 void	DrawHookLine()
 {
-	// 首先，从矿工精灵上获取一个缆绳链接点作为绳子的起始点(该链接点在编		// 辑器里编辑好)
+	// ���ȣ��ӿ󹤾����ϻ�ȡһ���������ӵ���Ϊ���ӵ���ʼ��(�����ӵ��ڱ�		// ������༭��)
 	float	fStartX	=	dGetSpriteLinkPointPosX( "GoldMan", 1 );
 	float	fStartY	=	dGetSpriteLinkPointPosY( "GoldMan", 1 );
-	// 绳子终点在钩子精灵上获取(该链接点在编辑器里编辑好)
+	// �����յ��ڹ��Ӿ����ϻ�ȡ(�����ӵ��ڱ༭����༭��)
 	float	fEndX	=	dGetSpriteLinkPointPosX( "GoldHook", 1 );
 	float	fEndY	=	dGetSpriteLinkPointPosY( "GoldHook", 1 );
-	// 在这两点之间划线.线的颜色红绿蓝值都为50，即灰色
+	// ��������֮�仮��.�ߵ���ɫ������ֵ��Ϊ50������ɫ
 	dDrawLine( fStartX, fStartY, fEndX, fEndY, 2.f, 0, 50, 50, 50, 255 );
 }
 
