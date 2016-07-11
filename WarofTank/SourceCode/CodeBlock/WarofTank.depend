@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1420212242 source:c:\program files\funcode\games\waroftank\sourcecode\icon.rc
+
+1468205128 source:c:\program files\funcode\games\waroftank\sourcecode\src\main.cpp
+	"CommonAPI.h"
+	"LessonX.h"
+	"list.h"
+
+1422201536 c:\program files\funcode\games\waroftank\sourcecode\header\commonapi.h
+	<windows.h>
+
+1433848234 c:\program files\funcode\games\waroftank\sourcecode\header\lessonx.h
+	<Windows.h>
+
+1468205105 source:c:\program files\funcode\games\waroftank\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonAPI.h"
+	"LessonX.h"
+	"list.h"
+
+1468198131 source:c:\program files\funcode\games\waroftank\sourcecode\src\list.cpp
+
+1468205096 c:\program files\funcode\games\waroftank\sourcecode\header\list.h
+	<Stdio.h>
+	"CommonAPI.h"
+	"LessonX.h"
+

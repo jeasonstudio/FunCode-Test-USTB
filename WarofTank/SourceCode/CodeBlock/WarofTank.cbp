@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CodeBlock" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../../Bin/Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../CodeBlock/Debug" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../Header" />
+				</Compiler>
+				<Linker>
+					<Add library="..\Src\CommonAPI.a" />
+					<Add library="libwinmm.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="../../Bin/Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../CodeBlock/Release" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../Header" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="..\Src\CommonAPI.a" />
+					<Add library="libwinmm.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../Header/CommonAPI.h" />
+		<Unit filename="../Header/LessonX.h" />
+		<Unit filename="../Icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../Src/LessonX.cpp" />
+		<Unit filename="../Src/Main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
