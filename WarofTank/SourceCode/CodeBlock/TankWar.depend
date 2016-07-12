@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1420212242 source:c:\program files (x86)\funcode\games\tankwar\sourcecode\icon.rc
+
+1468310115 source:c:\program files (x86)\funcode\games\tankwar\sourcecode\src\list.cpp
+	<Stdio.h>
+	"List.h"
+
+1468310175 c:\program files (x86)\funcode\games\tankwar\sourcecode\header\list.h
+	<Windows.h>
+	"CommonAPI.h"
+
+1422201536 c:\program files (x86)\funcode\games\tankwar\sourcecode\header\commonapi.h
+	<windows.h>
+
+1468315711 source:c:\program files (x86)\funcode\games\tankwar\sourcecode\src\main.cpp
+	"CommonAPI.h"
+	"stdio.h"
+	"List.h"
+
