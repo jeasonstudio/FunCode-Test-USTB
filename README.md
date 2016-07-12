@@ -1,7 +1,11 @@
 # FunCode-Test-USTB
 Coding test with FunCode Games in USTB 2016.7
 
+**声明：所有试验内容都基于CodeBlocks，用VC++6.0的童鞋需要把源码和地图模板拿出来重新合成一下**
+
+
 ## **实验一:海底世界**
+（可能有问题，Pull Request的时候电脑死机了，估计实验一会打不开？？Who Care？？！！）
 
 >海底有五条鱼，其中四条来回随机游动，由玩家用键盘W A S D控制另外一条游动。
 要求如下：
