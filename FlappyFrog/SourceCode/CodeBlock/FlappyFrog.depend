@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1420212242 source:c:\users\sccy\desktop\jeason\flappyfrog\sourcecode\icon.rc
+
+1469021371 source:c:\users\sccy\desktop\jeason\flappyfrog\sourcecode\src\main.cpp
+	"CommonAPI.h"
+	"LessonX.h"
+
+1422201536 c:\users\sccy\desktop\jeason\flappyfrog\sourcecode\header\commonapi.h
+	<windows.h>
+
+1433848234 c:\users\sccy\desktop\jeason\flappyfrog\sourcecode\header\lessonx.h
+	<Windows.h>
+
+1469024853 source:c:\users\sccy\desktop\jeason\flappyfrog\sourcecode\src\lessonx.cpp
+	<Stdio.h>
+	"CommonAPI.h"
+	"LessonX.h"
+
