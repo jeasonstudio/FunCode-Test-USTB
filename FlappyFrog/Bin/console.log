@@ -1,0 +1,131 @@
+//-------------------------- 7/20/2016 -- 22:28:14 -----
+Processor Init:
+   Intel (unknown, Pentium Pro/II/III family), ~2.15 Ghz
+     (timed at roughly 2.17 Ghz)
+   FPU detected
+   MMX detected
+   SSE detected
+ 
+Math Init:
+   Installing Standard C extensions
+   Installing Assembly extensions
+   Installing FPU extensions
+   Installing MMX extensions
+   Installing SSE extensions
+ 
+Input Init:
+   DirectInput enabled.
+
+Initializing chunk mappings...
+   o 'TEXT' maps to TextChunk
+   o 'SCHK' maps to UnknownChunk
+   o 'SCHK' maps to SimChunk
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/main.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/main.cs.
+ % - Initializing Common
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/preferences/defaultPrefs.cs.
+Reading Display Device information...
+   Primary Display Device Found:
+      Vendor Id: VEN_0000
+      Device Id: DEV_0000
+
+Using OpenGL rendering. Fullscreen: 0
+
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/xml.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/properties.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/common.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/audio.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/canvas.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/cursor.cs.
+Video Init:
+   Accelerated OpenGL display device detected.
+   Accelerated D3D device not detected.
+   Voodoo 2 display device not detected.
+
+Activating the OpenGL display device...
+Activating the OpenGL display device...
+Setting screen mode to 320x320x32 (w)...
+Creating a new window...
+Acquiring a new device context...
+Pixel format set:
+  32 color bits, 24 depth bits, 8 stencil bits
+Creating a new rendering context...
+Making the new rendering context current...
+OpenGL driver information:
+  Vendor: ATI Technologies Inc.
+  Renderer: AMD Radeon R5 M330
+  Version: 4.4.13285 Compatibility Profile Context 14.502.1001.0
+OpenGL Init: Enabled Extensions
+  ARB_multitexture (Max Texture Units: 8)
+  EXT_blend_color
+  EXT_blend_minmax
+  EXT_compiled_vertex_array
+  EXT_texture_env_combine
+  EXT_packed_pixels
+  EXT_fog_coord
+  ARB_texture_compression
+  EXT_texture_compression_s3tc
+  (ARB|EXT)_texture_env_add
+  EXT_texture_filter_anisotropic (Max anisotropy: 16)
+  WGL_EXT_swap_control
+OpenGL Init: Disabled Extensions
+  EXT_paletted_texture
+  NV_vertex_array_range
+  3DFX_texture_compression_FXT1
+
+Max Texture Size reported as: 16384
+Setting screen mode to 400x650x32 (w)...
+OpenAL Driver Init:
+   Vendor: Creative Labs Inc.
+   Version: OpenAL 1.0
+   Renderer: Software
+   Extensions: EAX 2.0, EAX 3.0, EAX Unified, and EAX-AC3
+
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/profiles.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/cursors.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messageBoxOk.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messageBoxYesNo.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messageBoxYesNoCancel.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messageBoxOKCancel.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messageBoxOKCancelDetailsDlg.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messagePopup.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/options.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/remap.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/console.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/NetworkMenu.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/startServer.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/joinServer.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/waitingForServer.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/helpDlg.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/messageBox.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/help.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gui/chatGui.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/screenshot.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/metrics.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/Gui/FrameOverlayGui.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/scriptDoc.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/keybindings.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/options.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/levelManagement.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/projectManagement.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/projectResources.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/common/gameScripts/align.cs.
+
+FunCode (v1.7.5) initialized...
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/managed/datablocks.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/managed/persistent.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/managed/brushes.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/gameScripts/datablocks.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/gameScripts/guiProfiles.cs.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/gui/mainScreen.gui.
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/gameScripts/game.cs.
+Activating DirectInput...
+DirectInput joystick failed to enable!
+Compiling C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/data/levels/level.t2d...
+Loading compiled script C:/Users/sccy/Desktop/Jeason/FlappyFrog/Bin/game/data/levels/level.t2d.
+Setting screen mode to 400x650x32 (w)...
+DirectInput deactivated.
+Shutting down the OpenGL display device...
+Making the GL rendering context not current...
+Deleting the GL rendering context...
+Releasing the device context...
