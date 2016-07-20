@@ -31,7 +31,7 @@ Coding test with FunCode Games in USTB 2016.7
 
 ## **实验三: 美女拼图游戏**
 
-[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Pulzze](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Pulzze)
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Puzzle](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Puzzle)
 
 >玩家通过鼠标单击相邻位有空位的方块来移动方块，从而最终将一副散乱的图片拼成完整的图片。要求如下：
 * 游戏的初始界面如图一，单击空格键进入游戏，进入游戏之后系统将完成的图片分成大小相同的15分并随机摆放成如图二。
@@ -41,7 +41,7 @@ Coding test with FunCode Games in USTB 2016.7
 
 ## **实验十：坦克大战**
 
-[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/TankWar](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/TankWar)
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Waroftank](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/WarofTank)
 
 >玩家坦克与敌方坦克在街道中进行巷战，玩家坦克被击中、玩家指挥部被击中或游戏时间到，一局游戏结束。
 * 按下空格键后游戏开始，“空格开始”消失，载入地图，并把玩家坦克设置在指挥部左侧。
