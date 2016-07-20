@@ -7,6 +7,8 @@ Coding test with FunCode Games in USTB 2016.7
 ## **实验一:海底世界**
 （可能有问题，Pull Request的时候电脑死机了，估计实验一会打不开？？Who Care？？！！）
 
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Seagame](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Seagame)
+
 >海底有五条鱼，其中四条来回随机游动，由玩家用键盘W A S D控制另外一条游动。
 要求如下：
 * 游戏初始界面如下图。
@@ -16,6 +18,8 @@ Coding test with FunCode Games in USTB 2016.7
  
 
 ## **实验二: 黄金矿工**
+
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Goldman](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Goldman)
 
 >玩家通过键盘的按键控制矿工抓取金块，将钩子碰触到的金块抓取过来。
 要求如下：
@@ -27,6 +31,8 @@ Coding test with FunCode Games in USTB 2016.7
 
 ## **实验三: 美女拼图游戏**
 
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Pulzze](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/Pulzze)
+
 >玩家通过鼠标单击相邻位有空位的方块来移动方块，从而最终将一副散乱的图片拼成完整的图片。要求如下：
 * 游戏的初始界面如图一，单击空格键进入游戏，进入游戏之后系统将完成的图片分成大小相同的15分并随机摆放成如图二。
 * 启动游戏，单击空格键进入游戏。通过鼠标单击周围有空格的方块来移动方块，直到全图拼接成图二中右下角的图案样式，游戏结束，重新回到图一界面。
@@ -34,6 +40,8 @@ Coding test with FunCode Games in USTB 2016.7
 * 每次单击鼠标左键，方块移动一格。鼠标必须移动到方块范围内单击才能有效移动方块。
 
 ## **实验十：坦克大战**
+
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/TankWar](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/TankWar)
 
 >玩家坦克与敌方坦克在街道中进行巷战，玩家坦克被击中、玩家指挥部被击中或游戏时间到，一局游戏结束。
 * 按下空格键后游戏开始，“空格开始”消失，载入地图，并把玩家坦克设置在指挥部左侧。
