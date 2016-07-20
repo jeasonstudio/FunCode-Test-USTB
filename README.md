@@ -52,3 +52,13 @@ Coding test with FunCode Games in USTB 2016.7
 * 每隔几秒钟，比如3秒，就会产生一辆敌方坦克。敌方坦克每隔一段时间，比如1秒，就自动开炮。敌方坦克遇到墙就会停下来。停下来的坦克，前方的墙如果被摧毁了，又能继续前进。每隔几秒钟，比如2秒，敌方坦克就会顺时针变换一个方向前进。
 
 
+## **实验附加：Flappy Frog**
+
+[https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/FlappyFrog](https://github.com/jeasonstudio/FunCode-Test-USTB/tree/master/FlappyFrog)
+
+>这是一款来源于经典的游戏————Flappy Bird，借鉴了Flappy Frog。涉及到敏感的政治问题，避免被和谐，暂不解释寓意。
+* 呦呦。
+* 盛唐死来意。
+* Excited！
+* 年轻人，不要总想搞个大新闻。
+
