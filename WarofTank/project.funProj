@@ -4,7 +4,7 @@
    <Version>v1.7.5</Version>
    <MinVersion>v1.1.4</MinVersion>
    <Creator>Torque Game Builder</Creator>
-   <LastLevel>Bin/game/data/levels/level.t2d</LastLevel>
+   <LastLevel>Bin/game/data/levels/untitled.t2d</LastLevel>
    <ProjectName>TankWar</ProjectName>
    <ProjectType>C</ProjectType>
    <JavaDevVersion>JCreator</JavaDevVersion>
