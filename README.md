@@ -1,4 +1,6 @@
 # FunCode-Test-USTB
+
+[![Join the chat at https://gitter.im/jeasonstudio/FunCode-Test-USTB](https://badges.gitter.im/jeasonstudio/FunCode-Test-USTB.svg)](https://gitter.im/jeasonstudio/FunCode-Test-USTB?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Coding test with FunCode Games in USTB 2016.7
 
 **声明：所有试验内容都基于CodeBlocks，用VC++6.0的童鞋需要把源码和地图模板拿出来重新合成一下**
